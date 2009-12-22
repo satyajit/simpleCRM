@@ -1,19 +1,19 @@
 Feature: Manage logins
   In order to provide value for
-  job seekers they
+  users they
   want the ability to use features of our site
  
   Background:
     Given that I am on the home page
   
   Scenario: See masthead of the site without logging in
-    And I am not logged in
+    Given I am not logged in
     And I should see "Register"
     And I should see "Login"
     And I should not see "Logout"
   
   Scenario: See the registration page
-    And I follow "Register"
+    Given I follow "Register"
     And I should see "Register"
     And I should see "Firstname"
     And I should see "Lastname"

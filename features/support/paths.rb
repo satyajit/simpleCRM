@@ -8,12 +8,17 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
     
-    when /the home\s?page/
+   when /the home\s?page/
       '/'
    when /the new login page/
       new_login_path
-    when /new user page/
+   when /new user page/
       new_user_path 
+   when /dashboard page/
+      account_path
+   #This requires design decision what should I see after the user creates a contact?
+   # when /contacts page/i
+     # contacts_path(Contact.find($1))
     # Add more mappings here.
     # Here is a more fancy example:
     #
