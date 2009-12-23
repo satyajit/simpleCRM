@@ -1530,4 +1530,219 @@ contact_steps.rb  login_steps.rb    web_steps.rb
 [33m 46 [m [46;6H[K[56;121H[1m[7m6,1-1   [46;5H[?12l[?25h[?25l[56;123H2-3 [46;7H[?12l[?25h[?25l[56;123H3-5 [46;9H[?12l[?25h[?25l[m [36mA[m[56;123H[1m[7m4-6 [46;10H[?12l[?25h[?25l[mAn[56;123H[1m[7m5-7 [46;11H[?12l[?25h[?25l[m[36mAnd[m[56;123H[1m[7m6-8 [46;12H[?12l[?25h[?25l[56;123H7-9 [46;13H[?12l[?25h[?25l[m I[56;123H[1m[7m8-10[46;14H[?12l[?25h[?25l[56;123H9-11 [46;15H[?12l[?25h[?25l[m p[56;123H[1m[7m10-12[46;16H[?12l[?25h[?25l[mpr[56;124H[1m[7m1-13 [46;17H[?12l[?25h[?25l[mre[56;124H[1m[7m2-14 [46;18H[?12l[?25h[?25l[mes[56;124H[1m[7m3-15 [46;19H[?12l[?25h[?25l[mss[56;124H[1m[7m4-16 [46;20H[?12l[?25h[?25l[56;124H5-17 [46;21H[?12l[?25h[?25l[m "[56;124H[1m[7m6-18 [46;22H[?12l[?25h[?25l[m"U[56;124H[1m[7m7-19 [46;23H[?12l[?25h[?25l[mUp[56;124H[1m[7m8-20 [46;24H[?12l[?25h[?25l[mpd[56;124H[1m[7m9-21 [46;25H[?12l[?25h[?25l[mda[56;123H[1m[7m20-22 [46;26H[?12l[?25h[?25l[mat[56;124H[1m[7m1-23 [46;27H[?12l[?25h[?25l[mte[56;124H[1m[7m2-24 [46;28H[?12l[?25h[?25l[me"[56;124H[1m[7m3-25 [46;29H[?12l[?25h[?25l[m
 [33m 47 [m [47;6H[K[56;121H[1m[7m7,1-1   [47;5H[?12l[?25h[?25l[56;123H2-3 [47;7H[?12l[?25h[?25l[56;123H3-5 [47;9H[?12l[?25h[?25l[m T[56;123H[1m[7m4-6 [47;10H[?12l[?25h[?25l[mTh[56;123H[1m[7m5-7 [47;11H[?12l[?25h[?25l[mhe[56;123H[1m[7m6-8 [47;12H[?12l[?25h[?25l[m[32mThen[m[56;123H[1m[7m7-9 [47;13H[?12l[?25h[?25l[56;123H8-10[47;14H[?12l[?25h[?25l[m I[56;123H[1m[7m9-11 [47;15H[?12l[?25h[?25l[56;123H10-12[47;16H[?12l[?25h[?25l[m s[56;124H[1m[7m1-13 [47;17H[?12l[?25h[?25l[msh[56;124H[1m[7m2-14 [47;18H[?12l[?25h[?25l[mho[56;124H[1m[7m3-15 [47;19H[?12l[?25h[?25l[mou[56;124H[1m[7m4-16 [47;20H[?12l[?25h[?25l[mul[56;124H[1m[7m5-17 [47;21H[?12l[?25h[?25l[mld[56;124H[1m[7m6-18 [47;22H[?12l[?25h[?25l[56;124H7-19 [47;23H[?12l[?25h[?25l[m s[56;124H[1m[7m8-20 [47;24H[?12l[?25h[?25l[mse[56;124H[1m[7m9-21 [47;25H[?12l[?25h[?25l[mee[56;123H[1m[7m20-22 [47;26H[?12l[?25h[?25l[56;124H1-23 [47;27H[?12l[?25h[?25l[m "[56;124H[1m[7m2-24 [47;28H[?12l[?25h[?25l[m  [56;124H[1m[7m1-23 [47;27H[?12l[?25h[?25l[m 1[56;124H[1m[7m2-24 [47;28H[?12l[?25h[?25l[m12[56;124H[1m[7m3-25 [47;29H[?12l[?25h[?25l[m1 [56;124H[1m[7m2-24 [47;28H[?12l[?25h[?25l[m  [56;124H[1m[7m1-23 [47;27H[?12l[?25h[?25l[m "[56;124H[1m[7m2-24 [47;28H[?12l[?25h[?25l[m  [56;124H[1m[7m1-23 [47;27H[?12l[?25h[?25l[m "[56;124H[1m[7m2-24 [47;28H[?12l[?25h[?25l[m"1[56;124H[1m[7m3-25 [47;29H[?12l[?25h[?25l[m12[56;124H[1m[7m4-26 [47;30H[?12l[?25h[?25l[m23[56;124H[1m[7m5-27 [47;31H[?12l[?25h[?25l[m34[56;124H[1m[7m6-28 [47;32H[?12l[?25h[?25l[m45[56;124H[1m[7m7-29 [47;33H[?12l[?25h[?25l[m56[56;124H[1m[7m8-30 [47;34H[?12l[?25h[?25l[m67[56;124H[1m[7m9-31 [47;35H[?12l[?25h[?25l[m78[56;123H[1m[7m30-32 [47;36H[?12l[?25h[?25l[m89[56;124H[1m[7m1-33 [47;37H[?12l[?25h[?25l[m90[56;124H[1m[7m2-34 [47;38H[?12l[?25h[?25l[m0"[56;124H[1m[7m3-35 [47;39H[?12l[?25h[m[57;1H[K[47;38H[?25l[56;124H[1m[7m2-34 [47;38H[?12l[?25h[?25l[57;1H[m:[?12l[?25hw[?25l[?12l[?25h[?25l"features/contacts.feature" 47L, 1563C written[56;28H[1m[7mRails-cucumber-feature]    ]2;contacts.feature (~/code/simpleCRM/features) - VIM]1;contacts.feature[47;38H[?12l[?25h[56;124H1-33 [47;37H[56;121H6,22-24 [46;28H[56;121H5,31-33 [45;37H[56;124H0-32 [45;36H[56;123H29-31 [45;35H[56;124H8-30 [45;34H[56;124H7-29 [45;33H[56;124H6-28 [45;32H[56;124H5-27 [45;31H[56;124H4-26 [45;30H[56;124H3-25 [45;29H[?25l[m[57;1H[1m-- INSERT --[m[57;13H[K[45;29H[?12l[?25h[?25le" with "1234567890"[56;28H[1m[7m+][Rails-cucumber-feature][70C4-26 ]2;contacts.feature + (~/code/simpleCRM/features) - VIM]1;contacts.feature[45;30H[?12l[?25h[56;124H3-25 [45;29H[56;124H2-24 [45;28H[56;124H1-23 [45;27H[56;124H0-22 [45;26H[56;123H19-21 [45;25H[56;124H8-20 [45;24H[?25l[m "Phone" with "1234567890"[56;124H[1m[7m9-21 [45;25H[?12l[?25h[m[57;1H[K[45;24H[?25l[56;124H[1m[7m8-20 [45;24H[?12l[?25h[?25l[57;1H[m:[?12l[?25hw[?25l[?12l[?25h[?25l"features/contacts.feature" 47L, 1565C written[56;28H[1m[7mRails-cucumber-feature]    ]2;contacts.feature (~/code/simpleCRM/features) - VIM]1;contacts.feature[45;24H[?12l[?25h[56;121H7,3-5   [47;9H[?25l[m[57;1H[1m-- INSERT --[m[57;13H[K[47;9H[K[48;1H[33m 48 [m    [32mThen[m I should see "1234567890" [48;40H[K[56;28H[1m[7m+][Rails-cucumber-feature][69C1-1 ]2;contacts.feature + (~/code/simpleCRM/features) - VIM]1;contacts.feature[47;5H[?12l[?25h[m[57;1H[K[47;5H[?25l[56;123H[1m[7m0-[47;5H[?12l[?25h[?25l[m[57;1H1 line less; before #47  1 seconds ago[47;8H [32mThen[m I should see "1234567890"
 [1m[34m~                                                                                                                                        [m[56;28H[1m[7mRails-cucumber-feature]    [68C3-5 ]2;contacts.feature (~/code/simpleCRM/features) - VIM]1;contacts.feature[47;9H[?12l[?25h[?25l[m[57;1H[1m-- INSERT --[m[57;14H[K[48;1H[33m 48 [m[48;5H[K[56;28H[1m[7m+][Rails-cucumber-feature][67C8,1-1 ]2;contacts.feature + (~/code/simpleCRM/features) - VIM]1;contacts.feature[48;5H[?12l[?25h[?25l[56;123H2-3 [48;7H[?12l[?25h[?25l[m
-[33m 49 [m[49;5H[K[56;121H[1m[7m9,1-1 [49;5H[?12l[?25h[?25l[m[33m [m[34m#[m[56;123H[1m[7m2-2 [49;6H[?12l[?25h[?25l[m[49;5H[K[56;123H[1m[7m1-1 [49;5H[?12l[?25h[?25l[56;123H2-2 [49;6H[?12l[?25h[?25l[56;123H3-3 [49;7H[?12l[?25h[?25l[m [34m#[m[56;123H[1m[7m4-4 [49;8H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m5-5 [49;9H[?12l[?25h[?25l[m[34m c[m[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[34mca[m[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[34man[m[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m9-9 [49;13H[?12l[?25h[?25l[m[49;12H[K[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[49;11H[K[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[49;10H[K[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[49;9H[K[56;123H[1m[7m5-5 [49;9H[?12l[?25h[?25l[m[34m C[m[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[34mCa[m[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[34man[m[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m9-9 [49;13H[?12l[?25h[?25l[m[34m a[m[56;123H[1m[7m10-10[49;14H[?12l[?25h[?25l[m[34mad[m[56;124H[1m[7m1-11 [49;15H[?12l[?25h[?25l[m[34mdd[m[56;124H[1m[7m2-12 [49;16H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m3-13 [49;17H[?12l[?25h[?25l[m[34m m[m[56;124H[1m[7m4-14 [49;18H[?12l[?25h[?25l[m[34mmo[m[56;124H[1m[7m5-15 [49;19H[?12l[?25h[?25l[m[34mor[m[56;124H[1m[7m6-16 [49;20H[?12l[?25h[?25l[m[34mre[m[56;124H[1m[7m7-17 [49;21H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m8-18 [49;22H[?12l[?25h[?25l[m[34m s[m[56;124H[1m[7m9-19 [49;23H[?12l[?25h[?25l[m[34mse[m[56;123H[1m[7m20-20 [49;24H[?12l[?
+[33m 49 [m[49;5H[K[56;121H[1m[7m9,1-1 [49;5H[?12l[?25h[?25l[m[33m [m[34m#[m[56;123H[1m[7m2-2 [49;6H[?12l[?25h[?25l[m[49;5H[K[56;123H[1m[7m1-1 [49;5H[?12l[?25h[?25l[56;123H2-2 [49;6H[?12l[?25h[?25l[56;123H3-3 [49;7H[?12l[?25h[?25l[m [34m#[m[56;123H[1m[7m4-4 [49;8H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m5-5 [49;9H[?12l[?25h[?25l[m[34m c[m[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[34mca[m[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[34man[m[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m9-9 [49;13H[?12l[?25h[?25l[m[49;12H[K[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[49;11H[K[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[49;10H[K[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[49;9H[K[56;123H[1m[7m5-5 [49;9H[?12l[?25h[?25l[m[34m C[m[56;123H[1m[7m6-6 [49;10H[?12l[?25h[?25l[m[34mCa[m[56;123H[1m[7m7-7 [49;11H[?12l[?25h[?25l[m[34man[m[56;123H[1m[7m8-8 [49;12H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m9-9 [49;13H[?12l[?25h[?25l[m[34m a[m[56;123H[1m[7m10-10[49;14H[?12l[?25h[?25l[m[34mad[m[56;124H[1m[7m1-11 [49;15H[?12l[?25h[?25l[m[34mdd[m[56;124H[1m[7m2-12 [49;16H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m3-13 [49;17H[?12l[?25h[?25l[m[34m m[m[56;124H[1m[7m4-14 [49;18H[?12l[?25h[?25l[m[34mmo[m[56;124H[1m[7m5-15 [49;19H[?12l[?25h[?25l[m[34mor[m[56;124H[1m[7m6-16 [49;20H[?12l[?25h[?25l[m[34mre[m[56;124H[1m[7m7-17 [49;21H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m8-18 [49;22H[?12l[?25h[?25l[m[34m s[m[56;124H[1m[7m9-19 [49;23H[?12l[?25h[?25l[m[34mse[m[56;123H[1m[7m20-20 [49;24H[?12l[?25h[?25l[m[49;23H[K[56;123H[1m[7m19-19 [49;23H[?12l[?25h[?25l[m[34msc[m[56;123H[1m[7m20-20 [49;24H[?12l[?25h[?25l[m[34mce[m[56;124H[1m[7m1-21 [49;25H[?12l[?25h[?25l[m[34men[m[56;124H[1m[7m2-22 [49;26H[?12l[?25h[?25l[m[34mna[m[56;124H[1m[7m3-23 [49;27H[?12l[?25h[?25l[m[34mar[m[56;124H[1m[7m4-24 [49;28H[?12l[?25h[?25l[m[34mri[m[56;124H[1m[7m5-25 [49;29H[?12l[?25h[?25l[m[34mio[m[56;124H[1m[7m6-26 [49;30H[?12l[?25h[?25l[m[34mod[m[56;124H[1m[7m7-27 [49;31H[?12l[?25h[?25l[m[49;30H[K[56;124H[1m[7m6-26 [49;30H[?12l[?25h[?25l[m[34mos[m[56;124H[1m[7m7-27 [49;31H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m8-28 [49;32H[?12l[?25h[?25l[m[34m f[m[56;124H[1m[7m9-29 [49;33H[?12l[?25h[?25l[m[34mfo[m[56;123H[1m[7m30-30 [49;34H[?12l[?25h[?25l[m[34mor[m[56;124H[1m[7m1-31 [49;35H[?12l[?25h[?25l[m[34m [m[56;124H[1m[7m2-32 [49;36H[?12l[?25h[?25l[m[34m s[m[56;124H[1m[7m3-33 [49;37H[?12l[?25h[?25l[m[34msh[m[56;124H[1m[7m4-34 [49;38H[?12l[?25h[?25l[m[34mho[m[56;124H[1m[7m5-35 [49;39H[?12l[?25h[?25l[m[34mow[m[56;124H[1m[7m6-36 [49;40H[?12l[?25h[?25l[m[34mwi[m[56;124H[1m[7m7-37 [49;41H[?12l[?25h[?25l[m[34min[m[56;124H[1m[7m8-38 [49;42H[?12l[?25h[?25l[m[34mng[m[56;124H[1m[7m9-39 [49;43H[?12l[?25h[?25l[m[34m [m[56;123H[1m[7m40-40 [49;44H[?12l[?25h[?25l[m[34m e[m[56;124H[1m[7m1-41 [49;45H[?12l[?25h[?25l[m[34met[m[56;124H[1m[7m2-42 [49;46H[?12l[?25h[?25l[m[34mtc[m[56;124H[1m[7m3-43 [49;47H[?12l[?25h[?25l[m[34mc.[m[56;124H[1m[7m4-44 [49;48H[?12l[?25h[?25l[m[34m..[m[56;124H[1m[7m5-45 [49;49H[?12l[?25h[m[57;1H[K[49;48H[?25l[56;124H[1m[7m4-44 [49;48H[?12l[?25h[?1002l[?25l[m[57;1H"features/contacts.feature" 49L, 1612C written]2;satyajit@galt: ~/code/simpleCRM]1;satyajit@galt: ~/code/simpleCRM
+[?1l>[?12l[?25h[?1049l]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ gt[Kit commit -a - [Km "Complete[Kign the[K[K[K[K[K[Kng the contacts branch"
+# On branch contacts
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	app/controllers/contacts_controller.rb
+#	app/helpers/contacts_helper.rb
+#	app/models/contact.rb
+#	app/views/contacts/
+#	app/views/layouts/contacts.html.erb
+#	db/console
+#	db/migrate/20091222073218_create_contacts.rb
+#	features/contacts.feature
+#	features/step_definitions/contact_steps.rb
+#	features/support/custom.rb_back
+#	public/stylesheets/scaffold.css
+#	spec/
+#	test/fixtures/
+#	test/functional/
+#	test/unit/
+#	vendor/
+nothing added to commit but untracked files present (use "git add" to track)
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ git add ,
+fatal: pathspec ',' did not match any files
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ git add ,[K.
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ git add .,[Kcommit -a -m "Completing the contacts branch"
+[contacts 30bcb65] Completing the contacts branch
+ 155 files changed, 9499 insertions(+), 0 deletions(-)
+ create mode 100644 app/controllers/contacts_controller.rb
+ create mode 100644 app/helpers/contacts_helper.rb
+ create mode 100644 app/models/contact.rb
+ create mode 100644 app/views/contacts/add.html.erb
+ create mode 100644 app/views/contacts/delete.html.erb
+ create mode 100644 app/views/contacts/edit.html.erb
+ create mode 100644 app/views/contacts/index.html.erb
+ create mode 100644 app/views/contacts/new.html.erb
+ create mode 100644 app/views/contacts/show.html.erb
+ create mode 100644 app/views/contacts/update.html.erb
+ create mode 100644 app/views/contacts/view.html.erb
+ create mode 100644 app/views/layouts/contacts.html.erb
+ create mode 100644 db/console
+ create mode 100644 db/migrate/20091222073218_create_contacts.rb
+ create mode 100644 features/contacts.feature
+ create mode 100644 features/step_definitions/contact_steps.rb
+ create mode 100644 features/support/custom.rb_back
+ create mode 100644 public/stylesheets/scaffold.css
+ create mode 100644 spec/controllers/contacts_controller_spec.rb
+ create mode 100644 spec/factories.rb
+ create mode 100644 spec/fixtures/contacts.yml
+ create mode 100644 spec/helpers/contacts_helper_spec.rb
+ create mode 100644 spec/models/contact_spec.rb
+ create mode 100644 spec/views/contacts/add.html.erb_spec.rb
+ create mode 100644 spec/views/contacts/delete.html.erb_spec.rb
+ create mode 100644 spec/views/contacts/update.html.erb_spec.rb
+ create mode 100644 spec/views/contacts/view.html.erb_spec.rb
+ create mode 100644 test/fixtures/contacts.yml
+ create mode 100644 test/functional/contacts_controller_test.rb
+ create mode 100644 test/unit/contact_test.rb
+ create mode 100644 test/unit/helpers/contacts_helper_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/.gitignore
+ create mode 100644 vendor/gems/authlogic-2.1.3/CHANGELOG.rdoc
+ create mode 100644 vendor/gems/authlogic-2.1.3/LICENSE
+ create mode 100644 vendor/gems/authlogic-2.1.3/README.rdoc
+ create mode 100644 vendor/gems/authlogic-2.1.3/Rakefile
+ create mode 100644 vendor/gems/authlogic-2.1.3/VERSION.yml
+ create mode 100644 vendor/gems/authlogic-2.1.3/authlogic.gemspec
+ create mode 100644 vendor/gems/authlogic-2.1.3/generators/session/session_generator.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/generators/session/templates/session.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/init.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/base.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/email.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/logged_in_status.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/login.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/magic_columns.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/password.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/perishable_token.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/persistence_token.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/restful_authentication.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/session_maintenance.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/single_access_token.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/acts_as_authentic/validations_scope.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/authenticates_many/association.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/authenticates_many/base.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/controller_adapters/abstract_adapter.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/controller_adapters/merb_adapter.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/controller_adapters/rails_adapter.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/controller_adapters/sinatra_adapter.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/aes256.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/bcrypt.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/md5.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/sha1.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/sha256.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/sha512.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/crypto_providers/wordpress.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/i18n.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/i18n/translator.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/random.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/regex.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/activation.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/active_record_trickery.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/base.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/brute_force_protection.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/callbacks.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/cookies.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/existence.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/foundation.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/http_auth.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/id.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/klass.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/magic_columns.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/magic_states.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/params.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/password.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/perishable_token.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/persistence.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/priority_record.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/scopes.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/session.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/timeout.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/unauthorized_record.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/session/validation.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case/mock_controller.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case/mock_cookie_jar.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case/mock_logger.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case/mock_request.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/lib/authlogic/test_case/rails_request_adapter.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/rails/init.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/shoulda_macros/authlogic.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/base_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/email_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/logged_in_status_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/login_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/magic_columns_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/password_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/perishable_token_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/persistence_token_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/restful_authentication_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/session_maintenance_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/acts_as_authentic_test/single_access_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/authenticates_many_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/crypto_provider_test/aes256_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/crypto_provider_test/bcrypt_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/crypto_provider_test/sha1_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/crypto_provider_test/sha256_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/crypto_provider_test/sha512_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/fixtures/companies.yml
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/fixtures/employees.yml
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/fixtures/projects.yml
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/fixtures/users.yml
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/i18n_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/affiliate.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/company.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/employee.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/employee_session.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/ldaper.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/ordered_hash.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/project.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/user.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/libs/user_session.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/random_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/activation_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/active_record_trickery_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/brute_force_protection_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/callbacks_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/cookies_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/credentials_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/existence_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/http_auth_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/id_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/klass_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/magic_columns_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/magic_states_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/params_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/password_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/perishability_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/persistence_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/scopes_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/session_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/timeout_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/unauthorized_record_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/session_test/validation_test.rb
+ create mode 100644 vendor/gems/authlogic-2.1.3/test/test_helper.rb
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  [01;34mdb[0m  [01;34mdoc[0m  [01;34mfeatures[0m  [01;34mlib[0m  [01;34mlog[0m  [01;34mpublic[0m  Rakefile  README  rerun.txt  [01;34mscript[0m  [01;34mspec[0m  [01;34mtest[0m  [01;34mtmp[0m  [01;34mvendor[0m
+[m]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ rm -rf test/
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ rm -rf vendor/
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  [01;34mdb[0m  [01;34mdoc[0m  [01;34mfeatures[0m  [01;34mlib[0m  [01;34mlog[0m  [01;34mpublic[0m  Rakefile  README  rerun.txt  [01;34mscript[0m  [01;34mspec[0m  [01;34mtmp[0m
+[m]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ cp ~[K../jobfully/.gitignore .
+]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ ls
+[0m[01;34mapp[0m  [01;34mconfig[0m  [01;34mdb[0m  [01;34mdoc[0m  [01;34mfeatures[0m  [01;34mlib[0m  [01;34mlog[0m  [01;34mpublic[0m  Rakefile  README  rerun.txt  [01;34mscript[0m  [01;34mspec[0m  [01;34mtmp[0m
+[m]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ vi .gitignore 
+[?1000h[?1049h[?1h=[1;57r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[57;1H".gitignore" [noeol] 8L, 62C[>c[1;1H[33m  1 [m*.log
+[33m  2 [m*.swp
+[33m  3 [m*.sqlite3
+[33m  4 [mtmp/*
+[33m  5 [mdoc/api
+[33m  6 [mdoc/app
+[33m  7 [mlog/*
+[33m  8 [mdb/schema.rb
+[1m[34m~                                                                                                                                        [10;1H~                                                                                                                                        [11;1H~                                                                                                                                        [12;1H~                                                                                                                                        [13;1H~                                                                                                                                        [14;1H~                                                                                                                                        [15;1H~                                                                                                                                        [16;1H~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [24;1H~                                                                                                                                        [25;1H~                                                                                                                                        [26;1H~                                                                                                                                        [27;1H~                                                                                                                                        [28;1H~                                                                                                                                        [29;1H~                                                                                                                                        [30;1H~                                                                                                                                        [31;1H~                                                                                                                                        [32;1H~                                                                                                                                        [33;1H~                                                                                                                                        [34;1H~                                                                                                                                        [35;1H~                                                                                                                                        [36;1H~                                                                                                                                        [37;1H~                                                                                                                                        [38;1H~                                                                                                                                        [39;1H~                                                                                                                                        [40;1H~                                                                                                                                        [41;1H~                                                                                                                                        [42;1H~                                                                                                                                        [43;1H~                                                                                                                                        [44;1H~                                                                                                                                        [45;1H~                                                                                                                                        [46;1H~                                                                                                                                        [47;1H~                                                                                                                                        [48;1H~                                                                                                                                        [49;1H~                                                                                                                                        [50;1H~                                                                                                                                        [51;1H~                                                                                                                                        [52;1H~                                                                                                                                        [53;1H~                                                                                                                                        [54;1H~                                                                                                                                        [55;1H~                                                                                                                                        [m[56;1H[1m[7m.gitignore [Rails]                                                                                                     1,1-1          All]2;.gitignore (~/code/simpleCRM) - VIM]1;.gitignore[1;5H[?12l[?25h[?1000l[?1002hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[57;1H[?1002l]2;satyajit@galt: ~/code/simpleCRM]1;satyajit@galt: ~/code/simpleCRM[m[57;1H[K[57;1H[?1l>[?1049l]0;satyajit@galt: ~/code/simpleCRMsatyajit@galt:~/code/simpleCRM$ vi .gitignore 
+[?1000h[?1049h[?1h=[1;57r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[57;1H".gitignore" [noeol] 8L, 62C[>c[1;1H[33m  1 [m*.log
+[33m  2 [m*.swp
+[33m  3 [m*.sqlite3
+[33m  4 [mtmp/*
+[33m  5 [mdoc/api
+[33m  6 [mdoc/app
+[33m  7 [mlog/*
+[33m  8 [mdb/schema.rb
+[1m[34m~                                                                                                                                        [10;1H~                                                                                                                                        [11;1H~                                                                                                                                        [12;1H~                                                                                                                                        [13;1H~                                                                                                                                        [14;1H~                                                                                                                                        [15;1H~                                                                                                                                        [16;1H~                                                                                                                                        [17;1H~                                                                                                                                        [18;1H~                                                                                                                                        [19;1H~                                                                                                                                        [20;1H~                                                                                                                                        [21;1H~                                                                                                                                        [22;1H~                                                                                                                                        [23;1H~                                                                                                                                        [24;1H~                                                                                                                                        [25;1H~                                                                                                                                        [26;1H~                                                                                                                                        [27;1H~                                                                                                                                        [28;1H~                                                                                                                                        [29;1H~                                                                                                                                        [30;1H~                                                                                                                                        [31;1H~                                                                                                                                        [32;1H~                                                                                                                                        [33;1H~                                                                                                                                        [34;1H~                                                                    
