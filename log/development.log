@@ -3301,3 +3301,4 @@ Processing ContactsController#index (for 127.0.0.1 at 2009-12-22 12:24:34) [GET]
 Rendering template within layouts/contacts
 Rendering contacts/index
 Completed in 17ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+  [4;36;1mContact Create (0.5ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "phone", "email") VALUES('Bill Gates', 'Microsoft', '1 Microsoft Way, Redmond, WA', '2009-12-23 05:48:04', '2009-12-23 05:48:04', '4258028000', 'billg@microsoft.com')[0m
