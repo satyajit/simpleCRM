@@ -1,0 +1,9 @@
+*.log
+*.swp
+*.sqlite3
+tmp/*
+doc/api
+doc/app
+log/*
+db/schema.rb
+db/console
