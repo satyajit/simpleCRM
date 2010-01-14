@@ -3,7 +3,6 @@ class ContactsController < ApplicationController
   # GET /contacts.xml
   def index
     @contacts = Contact.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @contacts }
