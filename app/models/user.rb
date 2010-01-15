@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
   validates_length_of :lastname, :maximum=>40
   validates_presence_of :firstname, :lastname, :email, :password
 
+  def deliver_password_reset_instructions!
+    reset_perishable_token!
+    Notifier.deliver_password_reset_instructions(self)
+  end
 end

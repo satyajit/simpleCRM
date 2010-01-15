@@ -29,3 +29,8 @@ Given /^that an user with email "([^\"]*)" with password "([^\"]*)" exists$/ do 
     :password_confirmation=>password)
  end
 end
+
+When /^an email should be send to the user with password reset link$/ do
+  pending # express the regexp above with the code you wish you had
+end
+

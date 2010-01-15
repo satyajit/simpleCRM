@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :messages
-
+  map.resources :password_resets
   map.resources :tasks
 
   map.resources :deals
