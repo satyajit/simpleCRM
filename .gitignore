@@ -7,3 +7,4 @@ doc/app
 log/*
 db/schema.rb
 db/console
+rerun.txt

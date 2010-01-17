@@ -1,8 +1,10 @@
 class DealsController < ApplicationController
+  before_filter :require_user
   # GET /deals
+
   # GET /deals.xml
   def index
-    @deals = Deal.all
+    @deals = current_user.deals 
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +15,7 @@ class DealsController < ApplicationController
   # GET /deals/1
   # GET /deals/1.xml
   def show
-    @deal = Deal.find(params[:id])
+    @deal = current_user.deals.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -58,7 +60,7 @@ class DealsController < ApplicationController
   # PUT /deals/1.xml
   def update
     @deal = Deal.find(params[:id])
-
+    return permission_denied unless current_user.can_edit?(@deal)
     respond_to do |format|
       if @deal.update_attributes(params[:deal])
         flash[:notice] = 'Deal was successfully updated.'
@@ -75,6 +77,7 @@ class DealsController < ApplicationController
   # DELETE /deals/1.xml
   def destroy
     @deal = Deal.find(params[:id])
+    return permission_denied unless current_user.can_edit?(@deal)
     @deal.destroy
 
     respond_to do |format|

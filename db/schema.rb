@@ -12,6 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100115202035) do
 
   create_table "contacts", :force => true do |t|
+    t.integer  "user_id"
     t.string   "name"
     t.string   "email"
     t.string   "phone"
@@ -22,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20100115202035) do
   end
 
   create_table "deals", :force => true do |t|
+    t.integer  "user_id"
     t.string   "company"
     t.text     "description"
     t.string   "status"
@@ -30,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20100115202035) do
   end
 
   create_table "messages", :force => true do |t|
+    t.integer  "user_id"
     t.string   "from"
     t.text     "message"
     t.datetime "created_at"
@@ -37,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20100115202035) do
   end
 
   create_table "tasks", :force => true do |t|
+    t.integer  "user_id"
     t.string   "title"
     t.date     "due"
     t.text     "description"

@@ -5631,3 +5631,3263 @@ Processing PasswordResetsController#edit (for 127.0.0.1 at 2010-01-15 15:07:47) 
 Rendering template within layouts/application
 Rendering password_resets/edit
 Completed in 33ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/password_resets/zAe21Sl4O1TQ25ObMutQ/edit]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:18:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:20:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 89ms (DB: 0) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:20:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:20:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:20:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 25ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-01-15 16:21:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"messages"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:21:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:21:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:21:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 25ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-15 16:21:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:21:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 102ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:24:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+
+ArgumentError (wrong number of arguments (4 for 2)):
+  app/models/user.rb:2:in `has_many'
+  app/models/user.rb:2
+  authlogic (2.1.3) lib/authlogic/session/klass.rb:33:in `klass'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:90:in `login_field'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:213:in `login_field'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:118:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/activation.rb:48:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/klass.rb:64:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:79:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:37:in `new'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:37:in `find'
+  app/controllers/application_controller.rb:16:in `current_user_session'
+  app/controllers/application_controller.rb:21:in `current_user'
+  app/controllers/application_controller.rb:34:in `require_no_user'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:26:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:26:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 107ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-15 16:26:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 20ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:26:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:26:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:26:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 105ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-01-15 16:26:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"messages"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 20ms (DB: 0) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:26:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:26:04) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-15 16:26:18) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-01-16 00:26:18', "perishable_token" = '9tL9DjL56YBV-EF6tKbV' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/messages
+Completed in 113ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-01-15 16:26:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"messages"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `all' for #<MessagesController:0xb6f929a8>):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:26:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `all' for #<ContactsController:0xb6d9b924>):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:27:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.4ms)[0m   [0mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 46ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:27:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.4ms)[0m   [0mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 41ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing DealsController#destroy (for 127.0.0.1 at 2010-01-15 16:27:11) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "id"=>"1", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.4ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals"."id" = 1) [0m
+  [4;36;1mDeal Destroy (0.2ms)[0m   [0;1mDELETE FROM "deals" WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/deals
+Completed in 125ms (DB: 1) | 302 Found [http://0.0.0.0/deals/1]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:27:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mDeal Load (0.3ms)[0m   [0;1mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 42ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing DealsController#new (for 127.0.0.1 at 2010-01-15 16:27:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"deals"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deals/new
+Completed in 45ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/deals/new]
+
+
+Processing DealsController#create (for 127.0.0.1 at 2010-01-15 16:27:21) [POST]
+  Parameters: {"commit"=>"Create", "deal"=>{"company"=>"Amazon", "description"=>"fruits", "status"=>"active"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Create (0.8ms)[0m   [0mINSERT INTO "deals" ("company", "created_at", "updated_at", "description", "status") VALUES('Amazon', '2010-01-16 00:27:21', '2010-01-16 00:27:21', 'fruits', 'active')[0m
+Redirected to http://0.0.0.0:3000/deals/2
+Completed in 112ms (DB: 1) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing DealsController#show (for 127.0.0.1 at 2010-01-15 16:27:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"deals"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.3ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering deals/show
+Completed in 49ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/deals/2]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:27:25) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 30ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:27:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:27:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 95ms (DB: 0) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:27:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 33ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:27:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 26ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:27:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.9ms)
+Completed in 42ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:27:50) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"chinni", "firstname"=>"Shruti", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "perishable_token", "lastname", "password_salt", "firstname", "persistence_token", "email") VALUES('2010-01-16 00:27:50', '1c54da984030aed9c2f60c4091e777612100bf167675b9ab3055675397045520892610a7ebc5d2518563c3b0d61fc798b90643405a769c9d38c5f9f78a206b11', '2010-01-16 00:27:50', 'Bmo-uK4-NYjLvZTTAEfk', 'chinni', 'cZ2Hh9v3nF8CfJCis-Bo', 'Shruti', '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1', 'chinni.shruti@gmail.com')[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 41ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:27:50) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 33ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:27:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.4ms)[0m   [0mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 41ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:27:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 97ms (DB: 1) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:27:56) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 34ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:27:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+
+NoMethodError (undefined method `all' for #<ContactsController:0xb6e30d1c>):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:28:02) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7e3e241dedfb3c1c666669d461ee7ed2f03d93d5cf6b943620abc89838dda30e534eaa15ce0e6d5a41211c61b4ed415861fbcf518e4c3c7b4721f7747e9e03a1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 34ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:28:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 30ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+Migrating to CreateContacts (20091222073218)
+Migrating to CreateDeals (20100114212715)
+Migrating to CreateTasks (20100114214149)
+Migrating to CreateMessages (20100114215218)
+Migrating to AddUsersPasswordResetFields (20100115202035)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("contacts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("deals")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("messages")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:29:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (6.9ms)
+Completed in 34ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:29:24) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"Malugu", "firstname"=>"Satyajit", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'cd4def310220d7232ba9a930c87fc7687b066c0cc04d1d4d10a9219b4bb2e30b366057cffbc31bda4c05ef2067e53e010ea251dd476a2f1c80667e9e767e57b4') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (11.4ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:29:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(40), "lastname" varchar(40), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091118212608')[0m
+Migrating to CreateContacts (20091222073218)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "phone" varchar(255), "company" varchar(255), "address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222073218')[0m
+Migrating to CreateDeals (20100114212715)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "deals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "company" varchar(255), "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114212715')[0m
+Migrating to CreateTasks (20100114214149)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "due" date, "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114214149')[0m
+Migrating to CreateMessages (20100114215218)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "from" varchar(255), "message" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114215218')[0m
+Migrating to AddUsersPasswordResetFields (20100115202035)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mALTER TABLE "users" ADD "perishable_token" varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100115202035')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contacts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("deals")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-15 16:29:59) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 32ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-15 16:30:05) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 31ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:30:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 99ms (View: 79, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:30:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.6ms)
+Completed in 39ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:30:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 33ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:30:22) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"Malugu", "firstname"=>"Satyajit", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "perishable_token", "lastname", "password_salt", "firstname", "persistence_token", "email") VALUES('2010-01-16 00:30:22', '1cd05994b5f5304a9bb6ac6566adaa3d4046b98337c9de4f06be3553c5f282471f1006db7f206dcd630787ea31d1e2ff8c86fc4049656be6560a9c7a72156509', '2010-01-16 00:30:22', 'Rnl1CWbnzeuEf7rCboDj', 'Malugu', 'EAncR12zARp13lRaSnwS', 'Satyajit', 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b', 'malugu.satyajit@gmail.com')[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 40ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:30:22) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 108ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:30:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+
+NoMethodError (undefined method `all' for #<ContactsController:0xb6f574fc>):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-15 16:30:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 34ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:30:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 40ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-15 16:30:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 37ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:30:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;36;1mDeal Load (0.2ms)[0m   [0;1mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 34ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing DealsController#new (for 127.0.0.1 at 2010-01-15 16:30:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"deals"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deals/new
+Completed in 117ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/deals/new]
+
+
+Processing DealsController#create (for 127.0.0.1 at 2010-01-15 16:30:55) [POST]
+  Parameters: {"commit"=>"Create", "deal"=>{"company"=>"Amazon", "description"=>"fruits", "status"=>"active"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;35;1mDeal Create (0.3ms)[0m   [0mINSERT INTO "deals" ("company", "created_at", "updated_at", "description", "status") VALUES('Amazon', '2010-01-16 00:30:55', '2010-01-16 00:30:55', 'fruits', 'active')[0m
+Redirected to http://0.0.0.0:3000/deals/1
+Completed in 43ms (DB: 1) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing DealsController#show (for 127.0.0.1 at 2010-01-15 16:30:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+  [4;35;1mDeal Load (0.3ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deals/show
+Completed in 44ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/deals/1]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:30:59) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'cd9beb01f1766f5e9c822e2a2b757c8b44e8c6bceabae7852e2165187af185f87be87a634a6d921ba00609fa6e2571198287d0afd35dbe2b4bd69251b95d269b') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 30ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:30:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 32ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:31:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.6ms)
+Completed in 35ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:31:13) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"Chinni", "firstname"=>"Shruti", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "perishable_token", "lastname", "password_salt", "firstname", "persistence_token", "email") VALUES('2010-01-16 00:31:13', '844378fa0f52df7d718cdc15fcf97ecb81a2c5dfeab615ab9f7cda1f629258d7dd5c1778c8b6ec6689294f3a67e69a721d9327bc238a1f63392a3e86ff62fe05', '2010-01-16 00:31:13', 'GH8f13ab7NCM3YKjN-ur', 'Chinni', 'xCx543DzNORYuSMNLjPO', 'Shruti', 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5', 'chinni.shruti@gmail.com')[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 41ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:31:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 108ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:31:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+  [4;35;1mDeal Load (0.4ms)[0m   [0mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 47ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:31:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:31:19) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 31ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:31:23) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c1491fed6f24d64d0dbd8f19fbd849bd819f64a518d7c3a80a3cb10a0b76a73d3df5aad0e603fc3e6f4084caaff9d00c43ffd15b646dff5c447ca4bebaea2be5') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 31ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:31:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 32ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-15 16:33:22) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-16 00:33:22', "perishable_token" = 'OgHwnSHfbqpjH-D2MdsG' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 33ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:33:22) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 32ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:33:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 39ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-15 16:33:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 43ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-15 16:33:36) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"S", "company"=>"conceivian", "name"=>"Saqib", "phone"=>"4252502424", "email"=>"saqibr@conceivian.com"}, "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "phone", "email") VALUES('Saqib', 'conceivian', 'S', '2010-01-16 00:33:36', '2010-01-16 00:33:36', '4252502424', 'saqibr@conceivian.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/1
+Completed in 39ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-15 16:33:36) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 130ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts/1]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:33:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 47ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:33:42) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 29ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:33:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-15 16:33:53) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-01-16 00:33:53', "perishable_token" = '6NvfDrtjKqlxy7oUD-4S' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 36ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:33:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 33ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:33:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 42ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-15 16:33:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mDeal Load (0.4ms)[0m   [0;1mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 121ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:33:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 23ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:33:58) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 29ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:34:01) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 31ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:34:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 31ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:37:51) [GET]
+  Parameters: {"action"=>"new", "id"=>"../../../../config/database.yml", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/?id=../../../../config/database.yml]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:37:57) [GET]
+  Parameters: {"action"=>"new", "id"=>"../../../../config/database.yml", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/?id=../../../../config/database.yml]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:38:11) [GET]
+  Parameters: {"action"=>"new", "id"=>"config/database.yml", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 26ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/?id=config/database.yml]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(40), "lastname" varchar(40), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091118212608')[0m
+Migrating to CreateContacts (20091222073218)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "email" varchar(255), "phone" varchar(255), "company" varchar(255), "address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222073218')[0m
+Migrating to CreateDeals (20100114212715)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "deals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "company" varchar(255), "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114212715')[0m
+Migrating to CreateTasks (20100114214149)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "due" date, "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114214149')[0m
+Migrating to CreateMessages (20100114215218)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "from" varchar(255), "message" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114215218')[0m
+Migrating to AddUsersPasswordResetFields (20100115202035)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mALTER TABLE "users" ADD "perishable_token" varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100115202035')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("contacts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("deals")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("messages")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:52:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (7.3ms)
+Completed in 35ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:52:20) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"Malugu", "firstname"=>"Satyajit", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "perishable_token", "lastname", "password_salt", "firstname", "persistence_token", "email") VALUES('2010-01-16 00:52:20', '423e639c5f18c516bae213f9e7a008e2c9b9392e1b35b126ff37fef83f82024782f91424a9b02c7dd8fca447af9b015a3f67d8d5d080e6924533034a2d65be8b', '2010-01-16 00:52:20', 'diq6NyAUSdGuRoIoP6us', 'Malugu', 'yHMwkI6G0-vXfmMC9RP2', 'Satyajit', '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2', 'malugu.satyajit@gmail.com')[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 40ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:52:21) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 36ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:52:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 109ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-15 16:52:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 46ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-15 16:52:33) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"s", "company"=>"conceivian", "name"=>"Saqib", "phone"=>"4252502424", "email"=>"saqibr@conceivian.com"}, "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+  [4;35;1mContact Create (0.3ms)[0m   [0mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Saqib', 'conceivian', 's', '2010-01-16 00:52:33', '2010-01-16 00:52:33', NULL, '4252502424', 'saqibr@conceivian.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/1
+Completed in 45ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-15 16:52:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 40ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/1]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-15 16:52:36) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f73be62736964e2519b1ba4a9c852f9242a373b9a54d126136c7b6caf68c41af475922f74fede4d61bdc4e2efd6c23f63fb1047fe78ddd0ea956c724e440fa2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 33ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-15 16:52:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 30ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-15 16:52:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.4ms)
+Completed in 33ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-01-15 16:52:53) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "lastname"=>"chinni", "firstname"=>"Shruti", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "perishable_token", "lastname", "password_salt", "firstname", "persistence_token", "email") VALUES('2010-01-16 00:52:53', '21f54c30e98fbf3e3f0d404c7629b08b0aaa8bd693560bfd751ad6add02a46c6eeaf29532d40a4dfc2332d1129627b87b369876761b21de7028c11da554a15ce', '2010-01-16 00:52:53', 'rkZ5S-j9UCwVoVmBEhcM', 'chinni', 'IrJaXuOLWYqi0fHQY857', 'Shruti', '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa', 'chinni.shruti@gmail.com')[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 112ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-15 16:52:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 34ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:52:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 42ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:52:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 42ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-15 16:54:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 47ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-15 16:54:22) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"add", "company"=>"microsoft", "name"=>"Bill", "phone"=>"42513113111", "email"=>"bill@microsoft.com"}, "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Bill', 'microsoft', 'add', '2010-01-16 00:54:22', '2010-01-16 00:54:22', NULL, '42513113111', 'bill@microsoft.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/2
+Completed in 40ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-15 16:54:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 38ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/contacts/2]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-15 16:54:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mContact Load (0.6ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 128ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 09:55:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;35;1mContact Load (0.6ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 256ms (View: 99, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mDeal Load (0.2ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals".user_id = 1) [0m
+  [4;36;1mDeal Load (0.4ms)[0m   [0;1mSELECT * FROM "deals" [0m
+  [4;35;1mContact Load (1.4ms)[0m   [0mSELECT * FROM "contacts" [0m
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-17 10:08:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;35;1mDeal Load (0.2ms)[0m   [0mSELECT * FROM "deals" [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 145ms (View: 39, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing DealsController#new (for 127.0.0.1 at 2010-01-17 10:08:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deals/new
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/deals/new]
+
+
+Processing DealsController#create (for 127.0.0.1 at 2010-01-17 10:08:46) [POST]
+  Parameters: {"commit"=>"Create", "deal"=>{"company"=>"Microsoft", "description"=>"Well", "status"=>"active"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"deals"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mDeal Create (0.5ms)[0m   [0;1mINSERT INTO "deals" ("company", "created_at", "updated_at", "user_id", "description", "status") VALUES('Microsoft', '2010-01-17 18:08:46', '2010-01-17 18:08:46', NULL, 'Well', 'active')[0m
+Redirected to http://0.0.0.0:3000/deals/1
+Completed in 39ms (DB: 1) | 302 Found [http://0.0.0.0/deals]
+
+
+Processing DealsController#show (for 127.0.0.1 at 2010-01-17 10:08:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"deals"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+  [4;36;1mDeal Load (0.4ms)[0m   [0;1mSELECT * FROM "deals" WHERE ("deals"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering deals/show
+Completed in 105ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/deals/1]
+  [4;36;1mDeal Load (1.0ms)[0m   [0;1mSELECT * FROM "deals" [0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 10:14:14) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '0ed11a38c61ae1cd3f27a172c6faea3a5f8bdb8883b28e521dc269fda4e4fa1d5808b77cc427e1816b36313777233884c2f6728bda650f0f97586b038bf98faa') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 132ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 10:14:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 94ms (View: 74, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 10:14:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 10:15:31) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-17 18:15:31', "perishable_token" = 'JHpz_LA0p04sFF6-lGPE' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 245ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 10:15:31) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 47ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-17 10:15:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+
+SyntaxError (/home/satyajit/code/simpleCRM/app/controllers/contacts_controller.rb:1: syntax error, unexpected kCLASS, expecting $end
+242class ContactsController < ApplicationController
+        ^):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:16:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (1.5ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 186ms (View: 63, DB: 2) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-01-17 10:16:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Completed in 48ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/contacts/2/edit]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:16:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 69ms (View: 38, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:19:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 57ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:20:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 45ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:21:13) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 115ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 10:21:32) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"this", "company"=>"na", "name"=>"Satyajit", "phone"=>"4255025577", "email"=>"malugu"}, "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Create (0.3ms)[0m   [0mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Satyajit', 'na', 'this', '2010-01-17 18:21:32', '2010-01-17 18:21:32', NULL, '4255025577', 'malugu')[0m
+Redirected to http://0.0.0.0:3000/contacts/3
+Completed in 40ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 10:21:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 135ms (View: 104, DB: 1) | 200 OK [http://0.0.0.0/contacts/3]
+  [4;36;1mContact Load (1.1ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 10:35:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 115ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/3]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:35:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.7ms)[0m   [0mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 54ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:35:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 41ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 10:36:17) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"fdas", "company"=>"42", "name"=>"thi", "phone"=>"2424", "email"=>"satya@malugu.com"}, "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('thi', '42', 'fdas', '2010-01-17 18:36:17', '2010-01-17 18:36:17', NULL, '2424', 'satya@malugu.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/4
+Completed in 112ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 10:36:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 42ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/4]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:36:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Load (0.9ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 62ms (View: 28, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+  [4;36;1mContact Load (1.2ms)[0m   [0;1mSELECT * FROM "contacts" [0m
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:38:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 45ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 10:38:30) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"fdas", "company"=>"as", "name"=>"sgsf", "phone"=>"232", "email"=>"a@n.com"}, "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/contacts_controller.rb:43:in `initialize'
+  app/controllers/contacts_controller.rb:43:in `new'
+  app/controllers/contacts_controller.rb:43:in `create'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 10:45:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 40ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 10:45:34) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"fdas", "company"=>"as", "name"=>"42124", "phone"=>"232", "email"=>"a@n.com"}, "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Create (0.8ms)[0m   [0mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('42124', 'as', 'fdas', '2010-01-17 18:45:35', '2010-01-17 18:45:35', 1, '232', 'a@n.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/5
+Completed in 147ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 10:45:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 5 AND ("contacts".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 41ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/5]
+  [4;35;1mContact Load (2.7ms)[0m   [0mSELECT * FROM "contacts" [0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:46:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 42ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:48:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 116ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:48:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 43ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 10:48:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 41ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-01-17 10:48:29) [GET]
+  Parameters: {"action"=>"edit", "id"=>"5", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 5 AND ("contacts".user_id = 1)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Completed in 117ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts/5/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-01-17 10:52:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3 AND ("contacts".user_id = 1)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with ID=3 AND ("contacts".user_id = 1)):
+  app/controllers/contacts_controller.rb:37:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-01-17 10:55:09) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+
+NoMethodError (undefined method `can_edit?' for #<User:0xb6cb02e4>):
+  app/controllers/contacts_controller.rb:38:in `edit'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mContact Load (1.5ms)[0m   [0mSELECT * FROM "contacts" [0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:26:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 45ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 11:26:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 42ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 11:26:24) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"thisafda", "company"=>"abcd", "name"=>"Jain", "phone"=>"123", "email"=>"ja@mo.com"}, "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Jain', 'abcd', 'thisafda', '2010-01-17 19:26:24', '2010-01-17 19:26:24', 1, '123', 'ja@mo.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/6
+Completed in 115ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:26:25) [GET]
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:27:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 11:27:19) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"thisafda", "company"=>"abcd", "name"=>"Jain", "phone"=>"123", "email"=>"ja@mo.com"}, "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mContact Create (0.3ms)[0m   [0;1mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Jain', 'abcd', 'thisafda', '2010-01-17 19:27:19', '2010-01-17 19:27:19', 1, '123', 'ja@mo.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/7
+Completed in 42ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:27:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:27:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:27:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:28:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:28:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (uninitialized constant ContactsController::Contacts):
+  app/controllers/contacts_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:28:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+
+NoMethodError (undefined method `cannot?' for #<ContactsController:0xb6f4f018>):
+  app/controllers/contacts_controller.rb:17:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:28:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+
+NoMethodError (undefined method `cannot?' for #<ContactsController:0xb6d44d68>):
+  app/controllers/contacts_controller.rb:17:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:30:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+
+NoMethodError (undefined method `admin?' for #<User:0xb6e02afc>):
+  app/models/ability.rb:5:in `initialize'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:153:in `new'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:153:in `current_ability'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  app/controllers/contacts_controller.rb:17:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:31:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 70ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/contacts/7]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:31:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.7ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 57ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#destroy (for 127.0.0.1 at 2010-01-17 11:31:48) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+  [4;36;1mContact Destroy (0.4ms)[0m   [0;1mDELETE FROM "contacts" WHERE "id" = 7[0m
+Redirected to http://0.0.0.0:3000/contacts
+Completed in 97ms (DB: 1) | 302 Found [http://0.0.0.0/contacts/7]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:31:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.6ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 49ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 11:31:56) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 38ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:31:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 96ms (View: 74, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 11:32:04) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-01-17 19:32:04', "perishable_token" = 'F724fdUNnl7mq5cnHu-C' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 190ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:32:05) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 38ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:32:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 35ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:32:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 24ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:32:11) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 106ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-17 11:32:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 85ms (View: 41, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:32:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 35ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2010-01-17 11:32:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/new
+Completed in 120ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-01-17 11:32:31) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "contact"=>{"address"=>"this", "company"=>"fasd", "name"=>"Dave", "phone"=>"1231", "email"=>"me@dave.com"}, "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mContact Create (0.3ms)[0m   [0mINSERT INTO "contacts" ("name", "company", "address", "created_at", "updated_at", "user_id", "phone", "email") VALUES('Dave', 'fasd', 'this', '2010-01-17 19:32:31', '2010-01-17 19:32:31', 2, '1231', 'me@dave.com')[0m
+Redirected to http://0.0.0.0:3000/contacts/8
+Completed in 47ms (DB: 1) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:32:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 42ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/contacts/8]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:32:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 116ms (View: 86, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:32:36) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 25ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:32:36) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 31ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 11:32:40) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 33ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:32:40) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 112ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 11:34:06) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-17 19:34:06', "perishable_token" = 'oqhTWXqWpMgpgPLQYjMQ' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 35ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:34:06) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 31ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-17 11:34:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"deals"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering deals/index
+  [4;35;1mDeal Load (0.3ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals".user_id = 2) [0m
+Completed in 70ms (View: 27, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 11:34:12) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 30ms (DB: 0) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:34:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:35:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 11:35:46) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-17 19:35:46', "perishable_token" = 'sjcsCVF8AXWHmxj32T8t' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 106ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:35:46) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 34ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:35:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 44ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:36:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 118ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:36:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 48ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:36:11) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 40ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/contacts/8]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2010-01-17 11:37:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#3 (for 127.0.0.1 at 2010-01-17 11:38:37) [GET]
+  Parameters: {"action"=>"3", "id"=>"show", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with ID=show):
+  cancan (1.0.2) lib/cancan/controller_resource.rb:15:in `find'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:21:in `load_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:12:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:38:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 133ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/contacts/]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:38:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 42ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/contacts/8]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:38:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 3) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 40ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/contacts/3]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:38:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 119ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/2]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:39:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 45ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/2]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:39:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 45ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:39:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 51ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:40:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 80ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:40:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 48ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 11:40:08) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 29ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:40:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 35ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 11:40:13) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-17 19:40:13', "perishable_token" = 'FETQv14ENHRfnJfL78Wn' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 195ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:40:13) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 94ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:40:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 2) [0m
+Completed in 47ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 11:40:19) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 32ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:40:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 11:40:24) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"malugu.satyajit@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-01-17 19:40:24', "perishable_token" = 'NFEmi3i-DHAMp6pE_UDH' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 36ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:40:24) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 31ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:40:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+  [4;35;1mContact Load (0.6ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Completed in 49ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:40:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 120ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/contacts/8]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:44:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `user' for #<Class:0xb6eff5cc>):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:45:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for :show:Symbol):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:55:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:55:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:55:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:55:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 11:56:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 24ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 11:56:07) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 33ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-17 11:56:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"tasks"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 40ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:56:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:56:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #12 of app/views/contacts/index.html.erb:
+9:     <th>Address</th>
+10:   </tr>
+11: 
+12: <% @contacts.each do |contact| %>
+13:   <tr>
+14:     <td><%=h contact.name %></td>
+15:     <td><%=h contact.email %></td>
+
+    app/views/contacts/index.html.erb:12
+    app/controllers/contacts_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:56:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 2) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 121ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/2]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:56:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #12 of app/views/contacts/index.html.erb:
+9:     <th>Address</th>
+10:   </tr>
+11: 
+12: <% @contacts.each do |contact| %>
+13:   <tr>
+14:     <td><%=h contact.name %></td>
+15:     <td><%=h contact.email %></td>
+
+    app/views/contacts/index.html.erb:12
+    app/controllers/contacts_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:57:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 5) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 145ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/contacts/5]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:57:05) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.1ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with ID=7):
+  cancan (1.0.2) lib/cancan/controller_resource.rb:15:in `find'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:21:in `load_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:12:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 11:57:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.1ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 7) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Contact with ID=7):
+  cancan (1.0.2) lib/cancan/controller_resource.rb:15:in `find'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:21:in `load_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:12:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:57:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `user' for #<Class:0xb6f9fbbc>):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 11:58:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for :index:Symbol):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:00:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `object_class' for #<Ability:0xb6e896ec>):
+  app/models/ability.rb:5:in `initialize'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:153:in `new'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:153:in `current_ability'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:00:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `user' for #<Array:0xb7075078>):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:02:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for [:index, nil]:Array):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:02:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for [:index, nil]:Array):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:02:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for [:index, nil]:Array):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" ORDER BY contacts.id DESC LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:04:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for [:index, nil]:Array):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:04:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for [:index, nil]:Array):
+  app/models/ability.rb:6:in `initialize'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `call'
+  cancan (1.0.2) lib/cancan/ability.rb:201:in `can_perform_action?'
+  cancan (1.0.2) lib/cancan/ability.rb:48:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `each'
+  cancan (1.0.2) lib/cancan/ability.rb:44:in `can?'
+  cancan (1.0.2) lib/cancan/ability.rb:60:in `cannot?'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:05:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:05:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 12:05:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 12:06:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 12:06:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.5ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 12:06:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-01-17 12:06:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"contacts"}
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 8) [0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:06:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:06:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:07:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+
+SyntaxError (/home/satyajit/code/simpleCRM/app/models/ability.rb:5: syntax error, unexpected tCONSTANT, expecting kEND
+   can :read Contact do |contact|
+                    ^):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:153:in `current_ability'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:177:in `cannot?'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:07:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.0.2) lib/cancan/controller_additions.rb:141:in `unauthorized!'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:27:in `authorize_resource'
+  cancan (1.0.2) lib/cancan/resource_authorization.rb:13:in `load_and_authorize_resource'
+  cancan (1.0.2) lib/cancan/controller_additions.rb:15:in `load_and_authorize_resource'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:08:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #12 of app/views/contacts/index.html.erb:
+9:     <th>Address</th>
+10:   </tr>
+11: 
+12: <% @contacts.each do |contact| %>
+13:   <tr>
+14:     <td><%=h contact.name %></td>
+15:     <td><%=h contact.email %></td>
+
+    app/views/contacts/index.html.erb:12
+    app/controllers/contacts_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 12:08:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 27ms (DB: 1) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 12:08:34) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 30ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-17 12:08:38) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-17 12:08:39) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 35ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-17 12:08:43) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"chinni.shruti@gmail.com"}, "action"=>"create", "authenticity_token"=>"bo5+bUbeOXJ4dE0mdPSumKssSeyzTdb34eGZJyXV/zw=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'chinni.shruti@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2010-01-17 20:08:43', "perishable_token" = '2cJh6aeFwKGe_NAPFF9y' WHERE "id" = 2[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 35ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-17 12:08:43) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 31ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-17 12:08:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"contacts"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering contacts/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #12 of app/views/contacts/index.html.erb:
+9:     <th>Address</th>
+10:   </tr>
+11: 
+12: <% @contacts.each do |contact| %>
+13:   <tr>
+14:     <td><%=h contact.name %></td>
+15:     <td><%=h contact.email %></td>
+
+    app/views/contacts/index.html.erb:12
+    app/controllers/contacts_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)

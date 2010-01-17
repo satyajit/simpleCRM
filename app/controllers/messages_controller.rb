@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_filter :require_user
   # GET /messages
   # GET /messages.xml
   def index

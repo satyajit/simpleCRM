@@ -1,6 +1,7 @@
 class CreateMessages < ActiveRecord::Migration
   def self.up
     create_table :messages do |t|
+      t.integer :user_id
       t.string :from
       t.text :message
 

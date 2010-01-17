@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
-  has_many :contacts 
+  has_many :contacts
+  has_many :tasks
+  has_many :deals
+  has_many :messages
   acts_as_authentic do |c|
     c.login_field ='email'
   end

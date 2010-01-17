@@ -1,6 +1,7 @@
 class CreateDeals < ActiveRecord::Migration
   def self.up
     create_table :deals do |t|
+      t.integer :user_id
       t.string :company
       t.text :description
       t.enum :status
