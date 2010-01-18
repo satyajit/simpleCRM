@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.xml
   def index
-    @tasks = Task.all
+    @tasks = current_user.tasks.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,7 +15,7 @@ class TasksController < ApplicationController
   # GET /tasks/1.xml
   def show
     @task = Task.find(params[:id])
-
+    return permission_denied unless @task.user == current_user
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @task }
@@ -36,13 +36,14 @@ class TasksController < ApplicationController
   # GET /tasks/1/edit
   def edit
     @task = Task.find(params[:id])
+    return permission_denied unless @task.user == current_user
   end
 
   # POST /tasks
   # POST /tasks.xml
   def create
     @task = Task.new(params[:task])
-
+    @task.user = current_user
     respond_to do |format|
       if @task.save
         flash[:notice] = 'Task was successfully created.'
@@ -59,7 +60,7 @@ class TasksController < ApplicationController
   # PUT /tasks/1.xml
   def update
     @task = Task.find(params[:id])
-
+    return permission_denied unless @task.user == current_user
     respond_to do |format|
       if @task.update_attributes(params[:task])
         flash[:notice] = 'Task was successfully updated.'
@@ -76,6 +77,7 @@ class TasksController < ApplicationController
   # DELETE /tasks/1.xml
   def destroy
     @task = Task.find(params[:id])
+    return permission_denied unless @task.user == current_user
     @task.destroy
 
     respond_to do |format|

@@ -1,10 +1,8 @@
 class MessagesController < ApplicationController
-  before_filter :require_user
   # GET /messages
   # GET /messages.xml
   def index
-    @messages = Message.all
-
+    @messages = current_user.messages.all 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @messages }
@@ -15,7 +13,7 @@ class MessagesController < ApplicationController
   # GET /messages/1.xml
   def show
     @message = Message.find(params[:id])
-
+    return permission_denied unless @message.user == current_user
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @message }
@@ -36,13 +34,14 @@ class MessagesController < ApplicationController
   # GET /messages/1/edit
   def edit
     @message = Message.find(params[:id])
+    return permission_denied unless @message.user == current_user
   end
 
   # POST /messages
   # POST /messages.xml
   def create
     @message = Message.new(params[:message])
-
+    @message.user=current_user
     respond_to do |format|
       if @message.save
         flash[:notice] = 'Message was successfully created.'
@@ -59,7 +58,7 @@ class MessagesController < ApplicationController
   # PUT /messages/1.xml
   def update
     @message = Message.find(params[:id])
-
+    return permission_denied unless @message.user == current_user
     respond_to do |format|
       if @message.update_attributes(params[:message])
         flash[:notice] = 'Message was successfully updated.'
@@ -76,6 +75,7 @@ class MessagesController < ApplicationController
   # DELETE /messages/1.xml
   def destroy
     @message = Message.find(params[:id])
+    return permission_denied unless @message.user == current_user
     @message.destroy
 
     respond_to do |format|

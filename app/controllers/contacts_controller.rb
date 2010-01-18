@@ -1,9 +1,8 @@
 class ContactsController < ApplicationController
-  #This method is from cancan plugin, which finds and loads the resource
-  load_and_authorize_resource
   # GET /contacts
   # GET /contacts.xml
   def index
+    @contacts = current_user.contacts.all 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @contacts }
@@ -13,6 +12,8 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.xml
   def show
+    @contact = Contact.find(params[:id])
+    return permission_denied unless @contact.user==current_user
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @contact }
@@ -32,6 +33,8 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
+    @contact = Contact.find(params[:id])
+    return permission_denied unless @contact.user == current_user
   end
 
   # POST /contacts
@@ -55,7 +58,7 @@ class ContactsController < ApplicationController
   # PUT /contacts/1.xml
   def update
     @contact = Contact.find(params[:id])
-
+    return permission_denied unless @contact.user == current_user
     respond_to do |format|
       if @contact.update_attributes(params[:contact])
         flash[:notice] = 'Contact was successfully updated.'
@@ -72,6 +75,7 @@ class ContactsController < ApplicationController
   # DELETE /contacts/1.xml
   def destroy
     @contact = Contact.find(params[:id])
+    return permission_denied unless @contact.user == current_user
     @contact.destroy
 
     respond_to do |format|

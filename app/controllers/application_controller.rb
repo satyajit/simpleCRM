@@ -10,6 +10,18 @@ class ApplicationController < ActionController::Base
    filter_parameter_logging :password, :password_confirmation
    helper_method :current_user_session, :current_user
 
+   def permission_denied
+      respond_to do |format|
+        format.html {
+          flash[:error]= I18n.t('general.access_denied')
+          flash[:notice]= "Permission denied"
+          redirect_to root_path
+          }
+        format.xml { render :xml => I18n.t('general.access_denied') }
+      end
+      return false
+   end
+
    private
       def current_user_session
         return @current_user_session if defined?(@current_user_session)
