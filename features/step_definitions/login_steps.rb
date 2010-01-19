@@ -20,14 +20,9 @@ Given /^the following users$/ do |user_data|
 end
 
 Given /^that an user with email "([^\"]*)" with password "([^\"]*)" exists$/ do |email,password|
- if User.find_by_email(email).blank? 
-  User.create!(
-    :firstname=>"Tester",
-    :lastname=>"Tester",
-    :email=> email,
-    :password=>password,
-    :password_confirmation=>password)
- end
+  if User.find_by_email(email).blank? 
+    Factory(:tester, :email => email, :password => password, :password_confirmation => password)
+  end
 end
 
 When /^an email should be send to the user with password reset link$/ do

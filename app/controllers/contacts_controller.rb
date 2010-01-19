@@ -13,7 +13,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1.xml
   def show
     @contact = Contact.find(params[:id])
-    return permission_denied unless @contact.user==current_user
+    return permission_denied unless @contact.user == current_user
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @contact }
@@ -41,7 +41,7 @@ class ContactsController < ApplicationController
   # POST /contacts.xml
   def create
     @contact = Contact.new(params[:contact])
-    @contact.user=current_user
+    @contact.user = current_user
     respond_to do |format|
       if @contact.save
         flash[:notice] = 'Contact was successfully created.'

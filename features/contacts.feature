@@ -5,6 +5,7 @@ Feature: Contact management
 
 	Background: 
 		Given that an user with email "tester@example.com" with password "generic" exists
+    And I am logged in as "tester@example.com" with password "generic"
 	  And I am on dashboard page 
 
 	Scenario: Create a contact
@@ -21,6 +22,7 @@ Feature: Contact management
 		And I press "Create"
 		Then I should see "Bill Gates"
 
+  @one
 	Scenario: View all contacts
 		When I have contacts for Bill Gates and Steve Balmer
 		And I follow "CONTACTS"
