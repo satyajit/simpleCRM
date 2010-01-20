@@ -10530,3 +10530,839 @@ Migrating to AddUsersPasswordResetFields (20100115202035)
   [4;36;1mSQL (4.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091118212608')[0m
   [4;35;1mSQL (4.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100114212715')[0m
   [4;36;1mSQL (4.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100114214149')[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:36:37) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 30ms (DB: 1) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-19 16:36:37) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 176ms (View: 161, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-19 16:38:00) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:38:07) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 14ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-19 16:38:07) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 50ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-19 16:38:09) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 16:38:10) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 28ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-19 16:38:12) [GET]
+  Parameters: {"controller"=>"deals", "action"=>"index"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mDeal Load (0.2ms)[0m   [0mSELECT * FROM "deals" WHERE ("deals".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering deals/index
+Completed in 62ms (View: 42, DB: 1) | 200 OK [http://0.0.0.0/deals]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-01-19 16:38:13) [GET]
+  Parameters: {"controller"=>"messages", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mMessage Load (0.2ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering messages/index
+Completed in 27ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-19 16:48:40) [DELETE]
+  Parameters: {"_method"=>"delete", "authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "controller"=>"user_sessions", "action"=>"destroy"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 17ms (DB: 0) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:48:40) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-01-19 16:48:43) [GET]
+  Parameters: {"controller"=>"password_resets", "action"=>"new"}
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 27ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/password_resets/new]
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-01-19 16:48:52) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "email"=>"chinni.shruti@gmail.com", "commit"=>"Reset my password", "controller"=>"password_resets", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'chinni.shruti@gmail.com') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template password_resets/create.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-01-19 16:49:04) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "email"=>"malugu.satyajit@gmail.com", "commit"=>"Reset my password", "controller"=>"password_resets", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'malugu.satyajit@gmail.com') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template password_resets/create.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-01-19 16:49:14) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "email"=>"tester@example.com", "commit"=>"Reset my password", "controller"=>"password_resets", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'tester@example.com') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template password_resets/create.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:49:19) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:49:23) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 50ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-19 16:49:30) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "user_session"=>{"email"=>"tester1@domain.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'tester1@domain.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-19 16:49:39) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "user_session"=>{"email"=>"tester@domain.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'tester@domain.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 20ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-19 16:49:44) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "user_session"=>{"email"=>"tester@domain.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'tester@domain.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'JXNpGo-F_h--LvxLYaLb', "updated_at" = '2010-01-20 00:49:44' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 23ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-01-19 16:49:45) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Completed in 17ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-01-19 16:49:50) [DELETE]
+  Parameters: {"_method"=>"delete", "authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "controller"=>"user_sessions", "action"=>"destroy"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/user_session/new
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:49:50) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-19 16:51:43) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "user_session"=>{"email"=>"tester@domain.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'tester@domain.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/user_session]
+
+
+Processing PasswordResetsController#new (for 127.0.0.1 at 2010-01-19 16:51:46) [GET]
+  Parameters: {"controller"=>"password_resets", "action"=>"new"}
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 13ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/password_resets/new]
+
+
+Processing PasswordResetsController#create (for 127.0.0.1 at 2010-01-19 16:51:50) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "email"=>"chinni.shruti@gmail.com", "commit"=>"Reset my password", "controller"=>"password_resets", "action"=>"create"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'chinni.shruti@gmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering password_resets/new
+Completed in 17ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/password_resets]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 16:56:06) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-19 16:56:06) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 15ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-01-19 16:58:30) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "user_session"=>{"email"=>"tester@domain.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "controller"=>"user_sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".email) = 'tester@domain.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "perishable_token" = 'kzfHz3WOUgOnFAdjdC0-', "updated_at" = '2010-01-20 00:58:30' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/tasks
+Completed in 22ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 16:58:30) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 28ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 16:58:32) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#new (for 127.0.0.1 at 2010-01-19 16:58:34) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"new"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering tasks/new
+Completed in 304ms (View: 283, DB: 0) | 200 OK [http://0.0.0.0/tasks/new]
+
+
+Processing TasksController#create (for 127.0.0.1 at 2010-01-19 16:58:52) [POST]
+  Parameters: {"authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "task"=>{"title"=>"Bring potatoes", "due(1i)"=>"2010", "due(2i)"=>"1", "due(3i)"=>"20", "description"=>"Potatoe", "status"=>"done"}, "commit"=>"Create", "controller"=>"tasks", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Create (0.3ms)[0m   [0;1mINSERT INTO "tasks" ("user_id", "title", "due", "description", "status", "created_at", "updated_at") VALUES(1, 'Bring potatoes', '2010-01-20', 'Potatoe', 'done', '2010-01-20 00:58:52', '2010-01-20 00:58:52')[0m
+Redirected to http://0.0.0.0:3000/tasks/1
+Completed in 70ms (DB: 1) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-01-19 16:58:52) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (1.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 37ms (View: 11, DB: 2) | 200 OK [http://0.0.0.0/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 17:00:38) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 57ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-19 17:16:42) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering contacts/index
+Completed in 19ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/contacts]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 18:22:21) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 25ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#edit (for 127.0.0.1 at 2010-01-19 18:22:30) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"edit", "id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/edit
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/tasks/1/edit]
+
+
+Processing TasksController#update (for 127.0.0.1 at 2010-01-19 18:22:42) [PUT]
+  Parameters: {"_method"=>"put", "authenticity_token"=>"zDMm7jefSFIw0bdGRO//Xcd/0mZd67Bp3yKuSW0mD/I=", "task"=>{"title"=>"Bring potatoes", "due(1i)"=>"2010", "due(2i)"=>"1", "due(3i)"=>"22", "description"=>"Potatoe", "status"=>"pending"}, "commit"=>"Update", "controller"=>"tasks", "action"=>"update", "id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mTask Update (0.2ms)[0m   [0;1mUPDATE "tasks" SET "status" = 'pending', "due" = '2010-01-22', "updated_at" = '2010-01-20 02:22:42' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/tasks/1
+Completed in 33ms (DB: 1) | 302 Found [http://0.0.0.0/tasks/1]
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-01-19 18:22:42) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"show", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/show
+Completed in 65ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/tasks/1]
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 18:22:45) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 25ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'c2f5d578573459655303ed8ce90088ba009f444a8ef2693fbe0aa63ae256881e8167fe2f15a201c40020a49f22f15808f7c1154118065f6398799b053046ae5e') LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+Migrating to CreateContacts (20091222073218)
+Migrating to CreateDeals (20100114212715)
+Migrating to CreateTasks (20100114214149)
+Migrating to CreateMessages (20100114215218)
+Migrating to AddUsersPasswordResetFields (20100115202035)
+Migrating to CreateDelayedJobs (20100120040418)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0, "attempts" integer DEFAULT 0, "handler" text, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100120040418')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("contacts")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("deals")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("delayed_jobs")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('delayed_jobs_priority')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("messages")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+*** Starting job worker host:galt pid:6108
+Exiting...
+  [4;36;1mDelayed::Job Update (1.0ms)[0m   [0;1mUPDATE "delayed_jobs" SET locked_by = null, locked_at = null WHERE (locked_by = 'host:galt pid:6108') [0m
+*** Starting job worker host:galt pid:6529
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 20:26:07) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 60ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/tasks]
+
+
+Processing TasksController#1 (for 127.0.0.1 at 2010-01-19 20:26:19) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"1", "id"=>"deliver"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, deliver, destroy, edit, index, new, permission_denied, show, and update):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-01-19 20:26:35) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"show", "id"=>"deliver"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=deliver):
+  app/controllers/tasks_controller.rb:17:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#1 (for 127.0.0.1 at 2010-01-19 20:26:45) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"1", "id"=>"deliver"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, deliver, destroy, edit, index, new, permission_denied, show, and update):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:26:53) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NameError (undefined local variable or method `mailing' for #<TasksController:0xbce92b0>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#1 (for 127.0.0.1 at 2010-01-19 20:27:27) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"1", "id"=>"deliver"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, deliver, destroy, edit, index, new, permission_denied, show, and update):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#show (for 127.0.0.1 at 2010-01-19 20:27:38) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"show", "id"=>"deliver"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.1ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=deliver):
+  app/controllers/tasks_controller.rb:17:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (not_found)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:27:41) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `send_later' for #<Task:0xc053b40>):
+  (eval):6:in `method_missing'
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:29:01) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTask Load (0.2ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `send_later' for #<Task:0xb325fbc>):
+  (eval):6:in `method_missing'
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (102.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:33:19) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (70.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:36:55) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:36:57) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:37:19) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.7ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:38:01) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:38:03) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-19 20:38:07) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks".user_id = 1) [0m
+Rendering template within layouts/application
+Rendering tasks/index
+Completed in 109ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/tasks/]
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:38:12) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#deliver (for 127.0.0.1 at 2010-01-19 20:38:33) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"deliver", "id"=>"1"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTask Load (0.2ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+
+NoMethodError (undefined method `deliver' for #<struct Delayed::PerformableMethod object=nil, method=nil, args=nil>):
+  app/controllers/tasks_controller.rb:91:in `deliver'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (72.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+Migrating to CreateContacts (20091222073218)
+Migrating to CreateDeals (20100114212715)
+Migrating to CreateTasks (20100114214149)
+Migrating to CreateMessages (20100114215218)
+Migrating to AddUsersPasswordResetFields (20100115202035)
+Migrating to CreateDelayedJobs (20100120040418)
+Migrating to CreateMailings (20100120044632)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+Migrating to CreateContacts (20091222073218)
+Migrating to CreateDeals (20100114212715)
+Migrating to CreateTasks (20100114214149)
+Migrating to CreateMessages (20100114215218)
+Migrating to AddUsersPasswordResetFields (20100115202035)
+Migrating to CreateDelayedJobs (20100120040418)
+Migrating to CreateMailings (20100120044632)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091118212608)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(40), "lastname" varchar(40), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091118212608')[0m
+Migrating to CreateContacts (20091222073218)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "email" varchar(255), "phone" varchar(255), "company" varchar(255), "address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091222073218')[0m
+Migrating to CreateDeals (20100114212715)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "deals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "company" varchar(255), "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114212715')[0m
+Migrating to CreateTasks (20100114214149)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "due" date, "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100114214149')[0m
+Migrating to AddUsersPasswordResetFields (20100115202035)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "users" ADD "perishable_token" varchar(255) DEFAULT '' NOT NULL[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100115202035')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("contacts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("deals")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mDROP TABLE "contacts"[0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "email" varchar(255), "phone" varchar(255), "company" varchar(255), "address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mDROP TABLE "deals"[0m
+  [4;36;1mSQL (5.4ms)[0m   [0;1mCREATE TABLE "deals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "company" varchar(255), "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.4ms)[0m   [0;1mDROP TABLE "tasks"[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "due" date, "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (10.7ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(40), "lastname" varchar(40), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "perishable_token" varchar(255) DEFAULT '' NOT NULL) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'tester@domain.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'tester@domain.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '61b90b73b9531cc6788322a40d203c51adb69d160508d2156d45cfeaacd83312094fe2336496fe8a60969e74646e411443c834b322025ab96e062916bffb65bd') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("firstname", "lastname", "email", "crypted_password", "password_salt", "persistence_token", "created_at", "updated_at", "perishable_token") VALUES('Tester1', 'name', 'tester@domain.com', 'a5cdf9abd330f98e651e5bd8acd2684ed0a47ee9d53cf00de1f2adfbece21dae632890b593e7c7ed57efdf6c26904129264935e25dfab5da614386e438436887', 'vHMTUefgk0YGVYcrqjIw', '61b90b73b9531cc6788322a40d203c51adb69d160508d2156d45cfeaacd83312094fe2336496fe8a60969e74646e411443c834b322025ab96e062916bffb65bd', '2010-01-20 18:13:36', '2010-01-20 18:13:36', '2RptpBSJl80U0TyNWjeU')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("contacts")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("deals")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "name" varchar(255), "email" varchar(255), "phone" varchar(255), "company" varchar(255), "address" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE "deals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "company" varchar(255), "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (44.4ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "title" varchar(255), "due" date, "description" text, "status" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (5.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(40), "lastname" varchar(40), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "perishable_token" varchar(255) DEFAULT '' NOT NULL) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (6.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100115202035')[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20091222073218')[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20091118212608')[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100114212715')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100114214149')[0m

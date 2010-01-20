@@ -9,18 +9,3 @@ I intend to write cucumber features and step definitions for all the functionali
 including pretested plugings/gems because cucumber tests the overall behaviour.
 But I am delving into RSPec for them because it seems an overkill. Also, if at all I use 
 scaffold code, I am not going to test it with RSPec for the same reason.
-
-== Getting started
-
-Steps to get this app running. 
-
-To install all the required gems form the config/environment.rb file
-sudo rake gems:install
-To create the database 
-rake db:migrate
-To seed the database
-rake db:setup
-To populate the test database
-rake db:test:clone
-To verify everything is running fine
-cucumber

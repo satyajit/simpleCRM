@@ -85,4 +85,11 @@ class TasksController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def deliver
+    @task = Task.find(params[:id])
+    @task.send_later(:deliver)
+    flash[:notice] = "Mailing is being delivered"
+    redirect_to tasks_url
+  end
 end

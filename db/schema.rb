@@ -31,14 +31,6 @@ ActiveRecord::Schema.define(:version => 20100115202035) do
     t.datetime "updated_at"
   end
 
-  create_table "messages", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "from"
-    t.text     "message"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "tasks", :force => true do |t|
     t.integer  "user_id"
     t.string   "title"

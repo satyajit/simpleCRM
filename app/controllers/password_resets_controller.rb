@@ -12,7 +12,10 @@ class PasswordResetsController < ApplicationController
       @user.deliver_password_reset_instructions!
       flash[:notice]="Please check your inbox for instructions to reset your password"
       redirect_to root_url
-    end #need to handle no @user null  case
+    else
+      flash[:notice]="Could not find an account associated with this email, please recheck"
+      render :action => :new
+    end 
   end
   
   def edit

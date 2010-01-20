@@ -45,10 +45,10 @@ Rails::Initializer.run do |config|
     :enable_starttls_auto => true,
     :address => "smtp.gmail.com",
     :port    => "587",
-    :domain  => "xxxx.com",#google app domain
+    :domain  => "malugu.com",#google app domain
     :authentication => :plain,
-    :user_name => "xxx@xxx.com",#full username
-    :password =>  "xxx" #password
+    :user_name => "tester@malugu.com",#full username
+    :password =>  "password" #password
   }
 
 end
