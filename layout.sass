@@ -1,0 +1,94 @@
+<!-- Contains layout-related styling --> *
+  padding: 0
+  margin: 0
+
+
+body
+  text-align: center
+  margin: 3px
+
+
+#header
+  width: 960px
+  text-align: left
+  background: black
+  color: #FFFFFF
+
+
+#wrapper
+  text-align: left
+  width: 960px
+
+
+#footer
+  margin-left: 15%
+  text-align: left
+
+
+.text_right
+  float: right
+
+
+#header
+  .nav
+    padding: 3px
+    background: black
+    margin-top: 0px
+
+  ul.nav li
+    display: inline
+
+  #logo
+    padding: 10px
+
+  #greeting
+  ul
+    &.tabs
+      overflow: hidden
+      text-transform: uppercase
+      list-style: none
+
+      li
+        float: left
+        background: transparent url(../images/tab-right.gif) scroll no-repeat top right
+
+        a
+          display: block
+          padding: 5px 15px 4px
+          line-height: 2.5em
+          background: transparent url(../images/tab-left.gif) scroll no-repeat  top left
+          text-decoration: none
+          color: #fff
+          float: left
+
+    &.nav a
+      &:hover, &:focus
+        color: #333
+
+  .global_links
+    float: right
+    font-size: 14px
+    line-height: 14px
+    color: #56778b
+
+
+#wrapper
+  overflow: hidden
+  background: grey
+
+  .content
+    float: left
+
+    .nav
+      margin-top: 0px
+      padding-left: 0px
+
+    .advisor
+      border: 2px solid #FF9C21
+      margin: 3px 0px 3px
+
+  .actionitems
+    float: right
+    border: 2px solid #FF9C21
+    height: 500px
+    min-width: 250px

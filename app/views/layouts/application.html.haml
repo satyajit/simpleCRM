@@ -1,0 +1,44 @@
+!!! Transitional
+%html{html_attrs}
+  %head
+    %meta{"http-equiv" => "Content-type", "content" => "text/html; charset=utf-8"}
+    
+    %title 
+      simpleCRM
+    %link{ :href => "stylesheets/layout.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+  %body
+    #header
+      %ul.nav
+        %li#logo Simple CRM
+        %li.greeting 
+          - if current_user
+            Welcome to Simple CRM
+        %span.global_links
+          - if current_user
+          %li= link_to "Account" , edit_account_path        
+          %li= link_to "Logout" , user_session_path, :method => :delete        
+          - else
+          %li= link_to "Register", new_account_path 
+          %li= link_to "Account" , new_user_session_path        
+          %li= link_to "Account" , new_password_reset_path      
+      %ul.nav.tabs
+        %li
+          %a{:href => "/"} Home
+        %li
+          %a{:href => "/contacts"} Contacts
+        %li
+          %a{:href => "/tasks"} To Dos
+        %li
+          %a{:href => "/deals"} Deals
+        %li
+          %a{:href => "/messages"} Messages
+
+  #wrapper
+    .content
+      .notice= flash[:notice]
+    Main Content
+    = yield
+    .actionitems
+    = yield :actionitems
+  #footer
+    Copyright simple CRM 2009
