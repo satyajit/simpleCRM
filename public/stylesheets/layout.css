@@ -65,8 +65,11 @@ body{
 #header ul.nav a:focus {
   color: #333;
 }
-#header .links{
+#header .global_links{
   float: right;
+  font-size: 14px;
+  line-height: 14px;
+  color: #56778b;
 }
 /* Wrapper styling */
 #wrapper {
@@ -79,9 +82,6 @@ body{
 #wrapper .content .nav {
   margin-top: 0px;
   padding-left :0px;
-}
-#wrapper .content .nav .sidelinks{
-  padding-left:60px;
 }
 #wrapper .content .advisor{
   border: 2px solid #FF9C21;
