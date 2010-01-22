@@ -1,97 +1,66 @@
-<!-- Contains layout-related styling -->
-/*Main styling */
-*{
-  padding:0;
-  margin:0;
-}
-body{
+
+body {
   text-align: center;
-  margin: 3px;
-}
-#header{
+  margin: 3px; }
+
+#header {
   width: 960px;
-  text-align:left;
+  text-align: left;
   background: black;
-  color: #FFFFFF;
-}
-#wrapper {
+  color: #FFFFFF; }
+  #header .nav {
+    padding: 3px;
+    background: black;
+    margin-top: 0px; }
+  #header ul.nav li {
+    display: inline; }
+  #header #logo {
+    padding: !left_padding; }
+  #header ul.tabs {
+    overflow: hidden;
+    text-transform: uppercase;
+    list-style: none; }
+    #header ul.tabs li {
+      float: left;
+      background: transparent url(../images/tab-right.gif) scroll no-repeat top right; }
+      #header ul.tabs li a {
+        display: block;
+        padding: 5px 15px 4px;
+        line-height: 2.5em;
+        background: transparent url(../images/tab-left.gif) scroll no-repeat  top left;
+        text-decoration: none;
+        color: #fff;
+        float: left; }
+  #header ul.nav a:hover, #header ul.nav a:focus {
+    color: #333; }
+  #header #global_links {
+    float: right;
+    font-size: 14px;
+    line-height: 14px;
+    color: #56778b; }
+
+#container {
+  overflow: hidden;
   text-align: left;
   width: 960px;
-}
+  margin: 0 auto;
+  background: grey; }
+  #container #content {
+    overflow: hidden;
+    min-height: 650px; }
+    #container #content .center {
+      padding-left: 8px;
+      padding-right: 20px;
+      width: 642px;
+      float: left;
+      display: inline; }
+    #container #content .sidebar {
+      float: right;
+      width: 230px;
+      border: 2px solid #FF9C21;
+      height: !content_height - 100px;
+      min-width: 250px;
+      display: inline; }
+
 #footer {
-  margin-left: 15%;
-  text-align: left;
-}
-/*Common styles */
-.text_right {
-  float: right;
-}
-/* Header styling */
-#header .nav{
-  padding: 3px;
-  background: black;
-  margin-top:0px;
-}
-#header ul.nav li{
-  display: inline;
-}
-#header #logo{
-  padding:10px;
-}
-
-#header #greeting{
-  
-}
-#header ul.tabs {
-  overflow: hidden;
-  text-transform: uppercase;
-  list-style: none;            
-}
-#header ul.tabs li {
-  float: left;
-  background: transparent url(../images/tab-right.gif) scroll no-repeat top right;
-}
-#header ul.tabs li a {
-  display: block;
-  padding: 5px 15px 4px;
-  line-height: 2.5em;
-  background: transparent url(../images/tab-left.gif) scroll no-repeat  top left;
-  text-decoration: none;
-  color: #fff;
-  float: left; 
-}
-
-#header ul.nav a:hover,
-#header ul.nav a:focus {
-  color: #333;
-}
-#header .global_links{
-  float: right;
-  font-size: 14px;
-  line-height: 14px;
-  color: #56778b;
-}
-/* Wrapper styling */
-#wrapper {
-  overflow: hidden;
-  background: grey;
-}
-#wrapper .content {
-  float: left;
-}
-#wrapper .content .nav {
-  margin-top: 0px;
-  padding-left :0px;
-}
-#wrapper .content .advisor{
-  border: 2px solid #FF9C21;
-  margin:3px 0px 3px;
-}
-#wrapper .actionitems{
-  float:right;
-  border: 2px solid #FF9C21;
-  height: 500px;
-  min-width: 250px;
-}
-/*Controllers styling */
- 
+  text-align: center; }
