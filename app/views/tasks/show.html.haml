@@ -1,0 +1,19 @@
+%p
+  %b
+    Title:
+  = h @task.title
+%p
+  %b
+    Due:
+  = h @task.due
+%p
+  %b
+    Description:
+  = h @task.description
+%p
+  %b
+    Status:
+  = h @task.status
+= link_to 'Edit', edit_task_path(@task)
+|
+= link_to 'Back', tasks_path

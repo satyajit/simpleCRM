@@ -1,0 +1,26 @@
+%h1
+  Listing deals
+%table
+  %tr
+    %th
+      Company
+    %th
+      Description
+    %th
+      Status
+  - @deals.each do |deal|
+    %tr
+      %td
+        = h deal.company
+      %td
+        = h deal.description
+      %td
+        = h deal.status
+      %td
+        = link_to 'Show', deal
+      %td
+        = link_to 'Edit', edit_deal_path(deal)
+      %td
+      = link_to 'Destroy', deal, :confirm => 'Are you sure?', :method => :delete
+%br
+= link_to 'New deal', new_deal_path

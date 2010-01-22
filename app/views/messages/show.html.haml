@@ -1,0 +1,11 @@
+%p
+  %b
+    From:
+  = h @message.from
+%p
+  %b
+    Message:
+  = h @message.message
+= link_to 'Edit', edit_message_path(@message)
+|
+= link_to 'Back', messages_path

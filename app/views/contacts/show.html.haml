@@ -1,0 +1,23 @@
+%p
+  %b
+    Name:
+  = h @contact.name
+%p
+  %b
+    Email:
+  = h @contact.email
+%p
+  %b
+    Phone:
+  = h @contact.phone
+%p
+  %b
+    Company:
+  = h @contact.company
+%p
+  %b
+    Address:
+  = h @contact.address
+= link_to 'Edit', edit_contact_path(@contact)
+|
+= link_to 'Back', contacts_path
