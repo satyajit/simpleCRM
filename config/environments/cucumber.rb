@@ -22,5 +22,4 @@ config.gem "rspec-rails", :lib => 'spec/rails', :version => ">=1.2.6"
 
 require 'rubygems'
 require 'factory_girl'
-
 HOST = "localhost"
