@@ -12901,3 +12901,509 @@ ActionView::TemplateError (undefined method `auto_user_lastname' for #<User:0xaf
 Rendered rescues/_trace (158.0ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:06:56) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 87ms (View: 78, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:06:57) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-26 10:06:58) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+
+NoMethodError (undefined method `contacts' for nil:NilClass):
+  vendor/bundler_gems/ruby/1.9.1/gems/activesupport-2.3.5/lib/active_support/whiny_nil.rb:52:in `method_missing'
+  app/controllers/contacts_controller.rb:5:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-26 10:07:01) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:07:01) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 52ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing DealsController#index (for 127.0.0.1 at 2010-01-26 10:07:03) [GET]
+  Parameters: {"controller"=>"deals", "action"=>"index"}
+
+NoMethodError (undefined method `deals' for nil:NilClass):
+  vendor/bundler_gems/ruby/1.9.1/gems/activesupport-2.3.5/lib/active_support/whiny_nil.rb:52:in `method_missing'
+  app/controllers/deals_controller.rb:5:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-26 10:07:06) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+
+NoMethodError (undefined method `contacts' for nil:NilClass):
+  vendor/bundler_gems/ruby/1.9.1/gems/activesupport-2.3.5/lib/active_support/whiny_nil.rb:52:in `method_missing'
+  app/controllers/contacts_controller.rb:5:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (90.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-26 10:07:08) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:07:08) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-01-26 10:07:09) [GET]
+  Parameters: {"controller"=>"messages", "action"=>"index"}
+
+NoMethodError (undefined method `messages' for nil:NilClass):
+  vendor/bundler_gems/ruby/1.9.1/gems/activesupport-2.3.5/lib/active_support/whiny_nil.rb:52:in `method_missing'
+  app/controllers/messages_controller.rb:5:in `index'
+  haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (85.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TasksController#index (for 127.0.0.1 at 2010-01-26 10:07:14) [GET]
+  Parameters: {"controller"=>"tasks", "action"=>"index"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 14ms (DB: 0) | 302 Found [http://0.0.0.0/tasks]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:07:14) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 15ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing ContactsController#index (for 127.0.0.1 at 2010-01-26 10:13:36) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"index"}
+Redirected to http://0.0.0.0:3000/user_session/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 53ms (DB: 0) | 302 Found [http://0.0.0.0/contacts]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-01-26 10:13:36) [GET]
+  Parameters: {"controller"=>"user_sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:14:15) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_lastname' for #<User:0xbb63268>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_name_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (140.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:22:28) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (10.9ms)
+Completed in 35ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:29:19) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (6.9ms)
+Completed in 60ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:29:46) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_lastname' for #<User:0xbabab84>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_lastname_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (142.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:29:48) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_lastname' for #<User:0xb7d9a28>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_lastname_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (154.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:41:05) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_name' for #<User:0xb903110>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_name, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_lastname_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (163.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:41:34) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_lastname' for #<User:0xb6b0f10>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_lastname_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (103.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:43:33) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined local variable or method `autocomplete_for_user_lastname_users_path' for #<ActionView::Base:0xbe55b70>) on line #10 of app/views/users/_form.haml:
+7:   %p
+8:     = f.label :lastname
+9:     %br
+10:     = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_lastname_users_path
+11:   %p
+12:     = f.label :email
+13:     %br
+
+    app/views/users/_form.haml:10:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (132.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:43:49) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_user_email' for #<User:0xb8013c4>) on line #14 of app/views/users/_form.haml:
+11:   %p
+12:     = f.label :email
+13:     %br
+14:     = f.text_field :auto_user_email, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_email_users_path
+15:   %p
+16:     = f.label :password
+17:     %br
+
+    app/views/users/_form.haml:14:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (150.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-01-26 10:44:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `auto_complete_user_email' for #<User:0xb6cf670>) on line #14 of app/views/users/_form.haml:
+11:   %p
+12:     = f.label :email
+13:     %br
+14:     = f.text_field :auto_complete_user_email, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_email_users_path
+15:   %p
+16:     = f.label :password
+17:     %br
+
+    app/views/users/_form.haml:14:in `block in _run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/_form.haml:1:in `_run_haml_app47views47users47_form46haml_locals_form_object'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `block in render_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:11:in `render_with_haml'
+    app/views/users/new.html.haml:4:in `block in _run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `call'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:164:in `block in form_for_with_haml'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `call'
+    haml (2.2.17) lib/haml/helpers.rb:545:in `block in haml_bind_proc'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:170:in `form_for_with_haml'
+    app/views/users/new.html.haml:3:in `_run_haml_app47views47users47new46html46haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+    haml (2.2.17) lib/sass/plugin/rails.rb:19:in `process'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (103.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)

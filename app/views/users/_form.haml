@@ -7,11 +7,11 @@
   %p
     = f.label :lastname
     %br
-    = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_name_users_path
+    = f.text_field :lastname 
   %p
     = f.label :email
     %br
-    = f.text_field :email
+    = f.text_field :auto_user_email, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_email_users_path
   %p
     = f.label :password
     %br

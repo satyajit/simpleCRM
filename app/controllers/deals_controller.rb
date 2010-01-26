@@ -1,4 +1,5 @@
 class DealsController < ApplicationController
+  before_filter :require_user
   # GET /deals
   # GET /deals.xml
   def index
