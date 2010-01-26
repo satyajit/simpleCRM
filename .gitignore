@@ -8,4 +8,5 @@ log/*
 db/schema.rb
 db/console
 rerun.txt
+vendor/bundler_gems
 db/*

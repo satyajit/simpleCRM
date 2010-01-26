@@ -7,7 +7,7 @@
   %p
     = f.label :lastname
     %br
-    = f.text_field :lastname
+    = f.text_field :auto_user_lastname, :class => 'autocomplete', 'autocomplete_url' => autocomplete_for_user_name_users_path
   %p
     = f.label :email
     %br
